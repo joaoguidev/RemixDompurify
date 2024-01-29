@@ -16,6 +16,8 @@ export const links: LinksFunction = () => [
 
 export default function App() {
   const purified = DOMPurify.sanitize('children', { ALLOWED_ATTR: [] });
+  console.log(purified);
+  
   return (
     <html lang="en">
       <head>
